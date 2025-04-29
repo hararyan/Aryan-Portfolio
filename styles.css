@@ -1,0 +1,208 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.bar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.bar a:hover {
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+/* Left Side */
+.lef {
+    background-color: red;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 40px;
+    text-align: left;
+    color: black;
+}
+
+.lef h1 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.para {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+/* Right Side Image */
+.right img {
+    width: 800px;
+    max-width: 900px;
+    height: auto;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+/* Typing Animation */
+.cursor {
+    border-right: 2px solid white;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24em;
+    color: white;
+}
+
+.typewriter-animation {
+    animation:
+        typewriter 5s steps(50) 1s 1 normal both,
+        blinkingCursor 500ms steps(50) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkingCursor {
+    from {
+        border-right-color: white;
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Projects Section */
+.pro {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 4em 2em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.project-box {
+    background-color: #120f0f;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    flex: 1;
+    min-width: 300px;
+    color: white;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .lef h1 {
+        font-size: 55px;
+    }
+
+    .para {
+        font-size: 22px;
+    }
+
+    
+
+    .cursor {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bar a {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .yes p{
+        font-size: 50px;
+    }
+    .right {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .right img {
+        width: 90%;
+        max-width: 800px;
+        padding: 10px;
+    }
+    
+}
+
+.yes {
+    margin-top: 150px;
+    text-align: center;
+    align-items: center;
+    padding: 30px 40px;
+    font-size: 100px;
+    font-family: "Modern Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*form*/
+.fo{
+    border: 1px solid red;
+    padding: 20px;
+    margin: 20px;
+    color:white;
+    border-radius: 10px;
+    max-width: 900px;
+    background-color: #120f0f;
+
+
+}
+.fo label{
+    background-color: black;
+}
