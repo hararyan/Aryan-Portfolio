@@ -40,7 +40,7 @@ body {
     align-items: center;
     gap: 50px;
     height: 100vh;
-    flex-wrap: wrap;
+    
     padding: 2em;
 }
 
@@ -139,6 +139,9 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    .lef{
+        width: 400px;
+    }
 
     .lef h1 {
         font-size: 55px;
@@ -156,7 +159,7 @@ body {
     }
 
     .bar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
 
@@ -168,15 +171,19 @@ body {
         font-size: 50px;
     }
     .right {
-        width: 90%;
-        display: flex;
+        width: 100%;
+        
         justify-content: center;
     }
     
     .right img {
-        width: 90%;
-        max-width: 800px;
+        width: 100%;
         padding: 10px;
+        max-width: 500px;
+    }
+    .pro{
+        margin: 80px;
+    
     }
     
 }
@@ -185,7 +192,7 @@ body {
     margin-top: 150px;
     text-align: center;
     align-items: center;
-    padding: 30px 40px;
+    padding: 190px 40px;
     font-size: 100px;
     font-family: "Modern Antiqua", serif;
     font-weight: 400;
