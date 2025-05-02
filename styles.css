@@ -185,6 +185,9 @@ body {
         margin: 80px;
     
     }
+    .but button{
+        max-width:300px;
+    }
     
 }
 
