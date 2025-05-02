@@ -206,10 +206,13 @@ body {
     color:white;
     border-radius: 10px;
     max-width: 900px;
-    background-color: #120f0f;
+    
 
 
 }
 .fo label{
     background-color: black;
+}
+.form-control{
+    background-color: #120f0f;
 }
