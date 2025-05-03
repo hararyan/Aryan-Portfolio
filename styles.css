@@ -123,7 +123,10 @@ body {
 
 .project-box {
     background-color: #120f0f;
-    border: 1px solid red;
+    border-top:1px solid red;
+    border-bottom: 1px solid blue;
+    border-left: 1px solid rgb(74, 73, 72);
+    border-right: 1px solid rgb(74, 73, 72);
     border-radius: 20px;
     padding: 30px;
     max-width: 500px;
@@ -185,8 +188,11 @@ body {
         margin: 80px;
     
     }
-    .but button{
-        max-width:300px;
+    button{
+        background-color: red;
+    }
+    .aud button{
+        font-size: 15px;
     }
     
 }
@@ -203,12 +209,18 @@ body {
 }
 /*form*/
 .fo{
-    border: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid blue;
+    border-left: 1px solid rgb(74, 73, 72);
+    border-right: 1px solid rgb(74, 73, 72); 
+
     padding: 20px;
     margin: 20px;
     color:white;
     border-radius: 10px;
     max-width: 900px;
+    display: flex;
+    flex-direction:row;
     
 
 
@@ -218,4 +230,32 @@ body {
 }
 .form-control{
     background-color: #120f0f;
+    color: white;
 }
+/* audio */
+.play-btn {
+    background-color:black;
+    border-top: 1px solid red;
+    border-bottom: 1px solid blue;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+    align-items: end;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .play-btn:hover{
+    background-color: rgb(7, 13, 40);
+  }
+  .aud{
+    display: flex;
+    justify-content: end;
+  }
+  #inputEmail4{
+    background-color:black;
+  }
+  #inputPassword4{
+    background-color: black;
+  }
