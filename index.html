@@ -18,6 +18,21 @@
     <a href="passion.html">Passion</a>
     <a href="#con">Contact</a>
   </nav>
+  <!--audio-->
+  <div class="aud">
+    <!-- Hidden Audio -->
+  <audio id="myAudio"loop>
+    <source src="./rolex_bgm.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Visible Button -->
+  <button class="play-btn" onclick="playSound()">
+    <span style="color: red;">Play</span>
+    <span style="color: blue;">Rolex</span>
+  </button>
+
+  </div>
 
   <!--yes sir section-->
 
@@ -64,16 +79,22 @@
   <div class="fo">
     <form class="row g-3">
         <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
+          <label for="inputEmail4" class="form-label">
+            <span style="color: red;">Email:</span>
+          </label>
           <input type="email" class="form-control" id="inputEmail4">
         </div>
         <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Name</label>
+          <label for="inputPassword4" class="form-label">
+            <span style="color: blue;">Name:</span>
+          </label>
           <input type="text" class="form-control" id="inputPassword4">
         </div>
-        <textarea  style="background-color: #120f0f;margin-top:30px;color: white;border-radius: 10px;"  name="text" id="" placeholder="enter ur msg"></textarea>
+        <div class="area">
+        <textarea  style="background-color:black; border-left: auto;;margin-top:30px;color: white;border-radius: 10px;width: 100%;"  name="text" id="" placeholder="enter ur msg"></textarea>
+        </div>
         <div class="but">
-        <button style="padding: 5px;border-radius: 15px;width: 300px;align-items: center;margin: 0;border: none;background-color: wheat;color: #120f0f;"  type="submit">Submit</button>
+        <button style="padding: 5px;border-radius: 15px;width: 300px;align-items: center;border: none;color: #120f0f;"  type="submit">Submit</button>
         </div>
 
             </label>
@@ -96,5 +117,11 @@
         </span>
     </p>
 </footer>
+<script>
+  function playSound() {
+    document.getElementById("myAudio").play();
+  }
+</script>
+
 </body>
 </html>
